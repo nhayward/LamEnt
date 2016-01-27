@@ -33,7 +33,7 @@
 
 	  ga('create', 'UA-66852009-1', 'auto');
 	  ga('send', 'pageview');
-
+	  setTimeout("ga('send','event','Non-Bounce','on page for 30 seconds')",30000);
 	</script>
 </head>
 <body>
