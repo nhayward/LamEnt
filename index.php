@@ -3,6 +3,7 @@
 <head>
 	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
 	<title>La Mantia Enterprises | Construction Downers Grove | Residential &amp; Commercial Construction</title>
+	<meta name=viewport content="width=device-width, initial-scale=1">
 	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
 	<meta content="For quality and affordable construction in Downers Grove, Illinois, trust La Mantia Enterprises for your residential and commercial construction needs." name="Description">
 	<meta content="construction Downers Grove, residential construction, commercial construction" name="Keywords">
