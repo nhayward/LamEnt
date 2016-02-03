@@ -9,8 +9,6 @@
 	<meta content="construction Downers Grove, residential construction, commercial construction" name="Keywords">
 	<meta name="google-site-verification" content="qHfyVBHZtl4rXSlTXyBke-ORdhWluMOmuNz1_ki1FlQ" />
 	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css" />
-	<link rel="stylesheet" href="plugins/fancyBox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
-	<link rel="stylesheet" type="text/css" href="plugins/fancyBox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script>if (typeof jQuery === 'undefined') {
@@ -23,8 +21,6 @@
 				document.write(unescape('%3Cscript%20src%3D%22plugins/jquery-ui-1.11.4/jquery-ui.min.js%22%3E%3C/script%3E'));
 			}
 	</script>
-	<script type="text/javascript" src="plugins/fancyBox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-	<script type="text/javascript" src="plugins/fancyBox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
