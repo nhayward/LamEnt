@@ -4,11 +4,11 @@ body {
 	margin: 0px;
 }
 
-@media screen and (min-width: 945px) and (max-width: 1040px) {
+/*@media screen and (min-width: 945px) and (max-width: 1040px) {
 	body {
 		margin-right: -95px;
 	}
-}
+}*/
 
 #header {
 	width: 100%;
@@ -17,51 +17,60 @@ body {
 #logo {
 	position: relative;
 	display: inline-block;
+	vertical-align: middle;
 	right: 20px;
-	top: 23px;
+	/*top: 2px;*/
+}
+
+@media screen and (max-width: 719px) {
+	#logo {
+		display: none;
+	}
 }
 
 #nav {
 	position: fixed;
 	top: 0;
-	margin-top: -12px;
+	/*margin-top: -12px;*/
 	background-color: #292C31;
 	text-align: center;
 	width: 100%;
-	min-width: 730px;
 	z-index: 1;
 }
 
-@media screen and (max-width: 760px) {
-	#nav {
-		position: absolute;
-		min-width: 929px;
-		text-align: initial;
-	}
-
-	#logo {
-		padding-left: 40px;
-	}
-}
-
-.nav-item {
+#nav .nav-item {
 	display: inline-block;
 	color: white;
-	width: 100px;
-	padding: 32px 40px;
-	margin-right: -5px;
-	border: 1px solid white;
-	border-width: 0 1px;
 	text-decoration: none;
+	width: 100px;
+	padding: 28px 35px;
+	/*margin-right: -5px;*/
+	border: 1px solid white;
+	border-width: 0 1px 0 0;
 	font-size: 18px;
-	text-align: center;
 }
 
-.nav-item:hover {
+#nav .nav-item:nth-child(2) {
+	border-width: 0 1px;
+}
+
+@media screen and (max-width: 522px) {
+	#nav .nav-item {
+		padding: 28px 15px;
+	}
+}
+
+@media screen and (max-width: 402px) {
+	#nav .nav-item {
+		padding: 28px 10px;
+	}
+}
+
+#nav .nav-item:hover {
 	background-color: #E44D3C;
 }
 
-.active {
+#nav .active {
 	background-color: #E44D3C;
 	pointer-events: none;
 	cursor: default;
@@ -69,7 +78,7 @@ body {
 
 #img {
 	text-align: center;
-	margin-top: 84px;
+	margin-top: 77px;
 	margin-bottom: -4px;
 }
 
@@ -122,7 +131,12 @@ body {
 	border-width: 2em 2em 0 0;
 }
 
-@media screen and (max-width: 944px) {
+@media screen and (max-width: 1024px) {
+	.ribbon {
+		width: 100%;
+		padding: 5px 0;
+	}
+
 	.ribbon:before, .ribbon:after, .ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
 		display: none;
 	}
