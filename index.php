@@ -10,18 +10,6 @@
 	<meta name="google-site-verification" content="qHfyVBHZtl4rXSlTXyBke-ORdhWluMOmuNz1_ki1FlQ" />
 	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" />
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script>if (typeof jQuery === 'undefined') {
-				document.write(unescape('%3Cscript%20src%3D%22plugins/jquery-1.11.3.min.js%22%3E%3C/script%3E'));
-			}
-	</script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-	<script>if (typeof jQuery.ui === 'undefined') {
-				document.write(unescape('%3Clink%20rel%3D%22stylesheet%22%20href%3D%22plugins/jquery-ui-1.11.4/jquery-ui.min.css%22/%3E'));
-				document.write(unescape('%3Cscript%20src%3D%22plugins/jquery-ui-1.11.4/jquery-ui.min.js%22%3E%3C/script%3E'));
-			}
-	</script>
-	<script type="text/javascript" src="js/script.js"></script>
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -54,6 +42,26 @@
 		</div>
 	</div>
 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script>
+		if (typeof jQuery === 'undefined') {
+			document.write(unescape('%3Cscript%20src%3D%22plugins/jquery-1.11.3.min.js%22%3E%3C/script%3E'));
+		}
+	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	<script>
+		if (typeof jQuery.ui === 'undefined') {
+			document.write(unescape('%3Clink%20rel%3D%22stylesheet%22%20href%3D%22plugins/jquery-ui-1.11.4/jquery-ui.min.css%22/%3E'));
+			document.write(unescape('%3Cscript%20src%3D%22plugins/jquery-ui-1.11.4/jquery-ui.min.js%22%3E%3C/script%3E'));
+		}
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$(function() {
+			  $("#main").tabs();
+			});
+		});
+	</script>
 	<div id="content">
 		<div id="main">
 			<ul>
