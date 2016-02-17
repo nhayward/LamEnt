@@ -1,6 +1,6 @@
 body {
 	font-family: Arial,Helvetica,sans-serif;
-	min-width: 929px;
+	/*min-width: 929px;*/
 	margin: 0px;
 }
 
@@ -74,6 +74,21 @@ body {
 	margin-bottom: -4px;
 }
 
+#img img {
+	max-width: 865px;
+	width: 100%;
+}
+
+@media screen and (max-width: 522px) {
+	#img {
+		margin-top: 81px;
+	}
+
+	#img img {
+		display: none;
+	}
+}
+
 .ribbon {
 	width: 919px;
 	position: relative;
@@ -123,6 +138,11 @@ body {
 	border-width: 2em 2em 0 0;
 }
 
+.ribbon .ribbon-content img {
+	max-width: 500px;
+	width: 100%;
+}
+
 @media screen and (max-width: 1024px) {
 	.ribbon {
 		width: 100%;
@@ -135,16 +155,21 @@ body {
 }
 
 #content {
-	width: 865px;
+	max-width: 865px;
 	margin: auto;
 	display: flex;
 	display: -webkit-flex;
+	justify-content: space-between;
 	background-color: white;
 }
 
+@media screen and (max-width: 719px) {
+	#content {
+		flex-wrap: wrap;
+	}
+}
+
 #main {
-	flex-basis: 605px;
-	-webkit-flex-basis: 605px;
 	padding: 0 10px;
     background: transparent;
     border: none;
@@ -213,8 +238,7 @@ body {
 }
 
 #sidebar {
-	flex-basis: 260px;
-	-webkit-flex-basis: 260px;
+	flex-grow: 1;
 	background-color: #E5E7E8;
 	padding: 0 10px;
 }
