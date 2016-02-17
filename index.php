@@ -8,7 +8,7 @@
 	<meta content="For quality and affordable construction in Downers Grove, Illinois, trust La Mantia Enterprises for your residential and commercial construction needs." name="Description">
 	<meta content="construction Downers Grove, residential construction, commercial construction" name="Keywords">
 	<meta name="google-site-verification" content="qHfyVBHZtl4rXSlTXyBke-ORdhWluMOmuNz1_ki1FlQ" />
-	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css" />
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" />
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script>if (typeof jQuery === 'undefined') {
@@ -17,7 +17,7 @@
 	</script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 	<script>if (typeof jQuery.ui === 'undefined') {
-				document.write(unescape('%3Clink%20rel%3D%22stylesheet%22%20href%3D%22plugins/jquery-ui-1.11.4/jquery-ui.css%22/%3E'));
+				document.write(unescape('%3Clink%20rel%3D%22stylesheet%22%20href%3D%22plugins/jquery-ui-1.11.4/jquery-ui.min.css%22/%3E'));
 				document.write(unescape('%3Cscript%20src%3D%22plugins/jquery-ui-1.11.4/jquery-ui.min.js%22%3E%3C/script%3E'));
 			}
 	</script>
