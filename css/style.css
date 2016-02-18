@@ -38,12 +38,8 @@ body {
 	padding: 28px 35px;
 	margin-right: -5px;
 	border: 1px solid white;
-	border-width: 0 1px 0 0;
-	font-size: 18px;
-}
-
-#nav .nav-item:nth-child(2) {
 	border-width: 0 1px;
+	font-size: 18px;
 }
 
 @media screen and (max-width: 522px) {
