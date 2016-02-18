@@ -80,6 +80,7 @@
 					<li>Concrete</li>
 					<li>Landscaping</li>
 					<li>Brick</li>
+					<li>Snow Removal &amp; Salting</li>
 					<li>Other Construction Services</li>
 				</ul>
 				<p>See our <a href="services">services page</a> for more!</p>
