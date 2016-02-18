@@ -36,10 +36,14 @@ body {
 	text-decoration: none;
 	width: 100px;
 	padding: 28px 35px;
-	margin-right: -5px;
+	margin-right: -4px;
 	border: 1px solid white;
-	border-width: 0 1px;
+	border-width: 0 1px 0 0;
 	font-size: 18px;
+}
+
+#nav .nav-item:nth-child(2) {
+	border-width: 0 1px;
 }
 
 @media screen and (max-width: 522px) {
