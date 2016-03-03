@@ -9,6 +9,8 @@
 	<meta content="construction Downers Grove, residential construction, commercial construction" name="Keywords">
 	<meta name="google-site-verification" content="qHfyVBHZtl4rXSlTXyBke-ORdhWluMOmuNz1_ki1FlQ" />
 	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" />
+	<link rel="stylesheet" type="text/css" href="plugins/slick-1.5.9/slick/slick.css" />
+	<link rel="stylesheet" type="text/css" href="plugins/slick-1.5.9/slick/slick-theme.css" />
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -67,7 +69,7 @@
 			<ul>
 				<li><a href="#home">Home</a></li>
 				<li><a href="#about">About</a></li>
-				<!-- <li><a href="#gallery">Gallery</a></li> -->
+				<li><a href="#gallery">Gallery</a></li>
 			</ul>
 			<div id="home">
 				<h3>La Mantia Enterprises offers quality residential and commercial construction services at affordable rates</h3>
@@ -93,13 +95,28 @@
 				<p>Our owner Dominic La Mantia is proud to be a part of a community-based business. We have provided high-quality construction and landscaping services to the southwest suburbs of Chicago, IL for over 55 years. In our eyes, there is no room for error, no time for sloppiness, and no place for poor workmanship. For this reason, Mr. La Mantia ensures our employees are all well-experienced and well-equipped for all your property needs. Composed of fully bonded, licensed, and insured contractors, we consistently provide the highest quality residential and commercial construction service available in our industry.</p>
 				<p>La Mantia Enterprises is built on customer satisfaction and loyalty. We are always interested in feedback about our construction work and services. Customer satisfaction is what makes La Mantia Enterprises a successful business. Our Facebook page provides a platform for customer feedback and questions. With input from our clients, we can maintain and improve our residential and commercial services. We love to sit down with customers and explore their ideas in an open forum.</p>
 			</div>
-			<!-- <div id="gallery">
-				<?php
-				/*$images = glob("img/gallery/*", GLOB_BRACE);
-				foreach ($images as $image)
-					echo "<a class='fancybox' data-fancybox-group='thumb' href='" . $image . "'><img src='" . $image . "' /></a>\n";*/
-				?>
-			</div> -->
+			<div id="gallery">
+				<div id="carousel">
+					<?php
+						$images = glob("img/gallery/*", GLOB_BRACE);
+						foreach ($images as $image)
+							echo "<div><img data-lazy='" . $image . "' /></div>\n";
+					?>
+				</div>
+			</div>
+			<script type="text/javascript" src="plugins/slick-1.5.9/slick/slick.min.js"></script>
+			<script type="text/javascript">
+				function slickInit() {
+					setTimeout(function() {
+						$("#carousel").slick({
+							dots: false,
+							infinite: true
+						});
+					}, 0);
+					$("a[href=#gallery]").unbind('click', slickInit);
+				}
+				$("a[href=#gallery]").on('click', slickInit);
+			</script>
 		</div>
 		<div id="sidebar">
 			<h4>Hours of Operation:</h4>
