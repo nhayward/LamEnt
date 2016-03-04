@@ -62,6 +62,10 @@
 			$(function() {
 			  $("#main").tabs();
 			});
+			if ($(window).width() < 865) {
+				$("a[href=#gallery]").remove();
+				$("#gallery").remove();
+			}
 		});
 	</script>
 	<div id="content">
