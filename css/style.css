@@ -193,12 +193,12 @@ h3, h4, a {
     width: 100%;
 }
 
-/*#main img {
+#main .services img {
 	max-width: 270px;
 	width: 100%;
 	float: right;
 	margin: 0 0 10px 10px;
-}*/
+}
 
 #main .ui-widget-header { 
     background: transparent;
