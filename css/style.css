@@ -62,7 +62,7 @@ h3, h4, a {
 	}
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 360px) {
 	#nav .nav-item {
 		padding: 28px 0px;
 	}
