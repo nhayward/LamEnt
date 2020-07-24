@@ -91,7 +91,7 @@
 				</ul>
 				<p>See our <a href="services">services page</a> for more!</p>
 				<h3>Serving the Southwest Suburbs of Chicago, Illinois:</h3>
-				<p>Burr Ridge | Clarendon Hills | Countryside | Darien | Downers Grove | Glen Ellyn | Hillside | Hinsdale | Lisle | Lombard | Oak Brook | Villa Park | Warrenville | Westchester | Western Springs | Westmont | Wheaton | Willowbrook | Woodridge</p>
+				<p>Burr Ridge | Clarendon Hills | Darien | Downers Grove | Hinsdale | Lisle | Oak Brook | Western Springs | Westmont | Willowbrook | Woodridge</p>
 				<p>Come talk with us about your landscaping ideas and get a free estimate. Please <a href="contact">contact us</a> to book an appointment or to speak with one of our employees.</p>
 			</div>
 			<div id="about">
