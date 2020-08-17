@@ -18,6 +18,12 @@
 	  ga('send', 'pageview');
 	  setTimeout("ga('send','event','Non-Bounce','on page for 30 seconds')",30000);
 	</script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script type="text/javascript">
+        function recaptcha_callback() {
+            document.getElementById("send").disabled = false;
+        }
+    </script>
 </head>
 <body>
 
@@ -66,10 +72,16 @@
 							<td>Message:</td>
 							<td><textarea name="message" rows="10" cols="55"></textarea></td>
 						</tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <div class="g-recaptcha" data-callback="recaptcha_callback" data-sitekey="6LfBz78ZAAAAAMrsd7X7sRApawYKTk7jzVC0YVEm"></div>
+                            </td>
+                        </tr>
 						<tr>
 							<td></td>
 							<td><input type="reset" value="Clear">
-							<input id="send" type="submit" value="Send"></td>
+							<input id="send" type="submit" value="Send" disabled></td>
 						</tr>
 					</tbody>
 				</table>
