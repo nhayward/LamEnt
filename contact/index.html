@@ -23,6 +23,10 @@
         function recaptcha_callback() {
             document.getElementById("send").disabled = false;
         }
+
+        function recaptcha_expired_callback() {
+            document.getElementById("send").disabled = true;
+        }
     </script>
 </head>
 <body>
@@ -75,7 +79,7 @@
                         <tr>
                             <td></td>
                             <td>
-                                <div class="g-recaptcha" data-callback="recaptcha_callback" data-sitekey="6LfBz78ZAAAAAMrsd7X7sRApawYKTk7jzVC0YVEm"></div>
+                                <div class="g-recaptcha" data-callback="recaptcha_callback" data-expired-callback="recaptcha_expired_callback" data-sitekey="6LfBz78ZAAAAAMrsd7X7sRApawYKTk7jzVC0YVEm"></div>
                             </td>
                         </tr>
 						<tr>
