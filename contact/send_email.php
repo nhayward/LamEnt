@@ -3,7 +3,8 @@
 if(isset($_POST['email'])) {
 
   // $email_to = "nhayward2011@gmail.com";
-  $email_to = "dominic@lamantiaenterprises.com";
+  // $email_to = "dominic@lamantiaenterprises.com";
+  $email_to = "drlamantia23@gmail.com";
 
   $email_subject = "La Mantia Enterprises Contact Submission";
 
