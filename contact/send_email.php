@@ -2,9 +2,8 @@
 
 if(isset($_POST['email'])) {
 
-  // $email_to = "nhayward2011@gmail.com";
-  // $email_to = "dominic@lamantiaenterprises.com";
-  $email_to = "drlamantia23@gmail.com";
+  $email_to = "dominic@lamantiaenterprises.com";
+  $email_from = "Website Contact <no-reply@lamantiaenterprises.com>";
 
   $email_subject = "La Mantia Enterprises Contact Submission";
 
@@ -29,20 +28,20 @@ if(isset($_POST['email'])) {
 
   $phone = $_POST['phone']; // required
 
-  $email_from = $_POST['email']; // required
+  $email_reply = $_POST['email']; // required
 
   $message = $_POST['message']; // required
   
 
   $error_message = "";
 
-  if (strlen($name) == 0 || strlen($address) == 0 || strlen($email_from) == 0 || strlen($phone) == 0 || strlen($message) == 0) {
+  if (strlen($name) == 0 || strlen($address) == 0 || strlen($email_reply) == 0 || strlen($phone) == 0 || strlen($message) == 0) {
     $error_message .= "**Please fill out all fields of the form**\\n";
   }
 
   $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
    
-  if(!preg_match($email_exp,$email_from)) {
+  if(!preg_match($email_exp,$email_reply)) {
     $error_message .= "**The email address you entered does not appear to be valid**";
   }
 
@@ -69,7 +68,7 @@ if(isset($_POST['email'])) {
 
   $email_message .= "Phone: ".clean_string($phone)."\n";
 
-  $email_message .= "Email: ".clean_string($email_from)."\n";
+  $email_message .= "Email: ".clean_string($email_reply)."\n";
 
   $email_message .= "Message: ".clean_string($message)."\n";
 
@@ -78,7 +77,7 @@ if(isset($_POST['email'])) {
 
   $headers = 'From: '.$email_from."\r\n".
 
-  'Reply-To: '.$email_from."\r\n" .
+  'Reply-To: '.$email_reply."\r\n" .
 
   'X-Mailer: PHP/' . phpversion();
 
